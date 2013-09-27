@@ -22,8 +22,8 @@ OBJS = \
 	sysfile.o\
 	sysproc.o\
 	xng/timer.o\
-	trapasm.o\
-	trap.o\
+	xng/trapasm.o\
+	xng/trap.o\
 	uart.o\
 	xng/vectors.o\
 	xng/vm.o\
