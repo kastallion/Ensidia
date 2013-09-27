@@ -4,9 +4,9 @@ OBJS = \
 	xng/exec.o\
 	xng/file.o\
 	xng/fs.o\
-	ide.o\
-	ioapic.o\
-	kalloc.o\
+	xng/ide.o\
+	xng/ioapic.o\
+	xng/kalloc.o\
 	xng/kbd.o\
 	lapic.o\
 	log.o\
