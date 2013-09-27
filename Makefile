@@ -19,7 +19,7 @@ OBJS = \
 	xng/string.o\
 	xng/swtch.o\
 	syscall.o\
-	sysfile.o\
+	xng/sysfile.o\
 	xng/sysproc.o\
 	xng/timer.o\
 	xng/trapasm.o\
