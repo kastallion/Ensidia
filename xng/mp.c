@@ -7,7 +7,7 @@
 #include "../param.h"
 #include "../memlayout.h"
 #include "../include/mp.h"
-#include "../x86.h"
+#include "../include/x86.h"
 #include "../mmu.h"
 #include "../proc.h"
 

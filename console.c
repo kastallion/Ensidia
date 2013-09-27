@@ -12,7 +12,7 @@
 #include "memlayout.h"
 #include "mmu.h"
 #include "proc.h"
-#include "x86.h"
+#include "include/x86.h"
 
 static void consputc(int);
 
