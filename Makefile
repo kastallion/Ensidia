@@ -21,7 +21,7 @@ OBJS = \
 	syscall.o\
 	sysfile.o\
 	sysproc.o\
-	timer.o\
+	xng/timer.o\
 	trapasm.o\
 	trap.o\
 	uart.o\
