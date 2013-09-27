@@ -20,7 +20,7 @@ OBJS = \
 	xng/swtch.o\
 	syscall.o\
 	sysfile.o\
-	sysproc.o\
+	xng/sysproc.o\
 	xng/timer.o\
 	xng/trapasm.o\
 	xng/trap.o\
