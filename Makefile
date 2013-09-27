@@ -15,7 +15,7 @@ OBJS = \
 	picirq.o\
 	pipe.o\
 	proc.o\
-	spinlock.o\
+	xng/spinlock.o\
 	string.o\
 	swtch.o\
 	syscall.o\
@@ -182,6 +182,7 @@ clean:
 	initcode initcode.out kernel xv6.img fs.img kernelmemfs mkfs \
 	.gdbinit \
 	$(UPROGS)
+	rm xng/*.o
 
 # run in emulators
 

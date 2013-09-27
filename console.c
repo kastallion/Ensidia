@@ -6,7 +6,7 @@
 #include "defs.h"
 #include "param.h"
 #include "traps.h"
-#include "spinlock.h"
+#include "include/spinlock.h"
 #include "include/fs.h"
 #include "include/file.h"
 #include "memlayout.h"

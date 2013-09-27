@@ -7,7 +7,7 @@
 #include "../param.h"
 #include "../include/fs.h"
 #include "../include/file.h"
-#include "../spinlock.h"
+#include "../include/spinlock.h"
 
 struct devsw devsw[NDEV];
 struct {

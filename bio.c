@@ -23,7 +23,7 @@
 #include "types.h"
 #include "defs.h"
 #include "param.h"
-#include "spinlock.h"
+#include "include/spinlock.h"
 #include "buf.h"
 
 struct {

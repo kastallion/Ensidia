@@ -5,7 +5,7 @@
 #include "proc.h"
 #include "include/fs.h"
 #include "include/file.h"
-#include "spinlock.h"
+#include "include/spinlock.h"
 
 #define PIPESIZE 512
 
