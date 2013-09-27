@@ -18,7 +18,7 @@ OBJS = \
 	xng/spinlock.o\
 	xng/string.o\
 	xng/swtch.o\
-	syscall.o\
+	xng/syscall.o\
 	xng/sysfile.o\
 	xng/sysproc.o\
 	xng/timer.o\
