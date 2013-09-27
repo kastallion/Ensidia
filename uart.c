@@ -5,7 +5,7 @@
 #include "param.h"
 #include "traps.h"
 #include "spinlock.h"
-#include "fs.h"
+#include "include/fs.h"
 #include "file.h"
 #include "mmu.h"
 #include "proc.h"

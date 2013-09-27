@@ -2,7 +2,7 @@
 #include "defs.h"
 #include "param.h"
 #include "spinlock.h"
-#include "fs.h"
+#include "include/fs.h"
 #include "buf.h"
 
 // Simple logging. Each system call that might write the file system

@@ -3,15 +3,15 @@ OBJS = \
 	console.o\
 	exec.o\
 	file.o\
-	fs.o\
+	xng/fs.o\
 	ide.o\
 	ioapic.o\
 	kalloc.o\
-	kbd.o\
+	xng/kbd.o\
 	lapic.o\
 	log.o\
 	main.o\
-	mp.o\
+	xng/mp.o\
 	picirq.o\
 	pipe.o\
 	proc.o\
@@ -145,7 +145,7 @@ _forktest: forktest.o $(ULIB)
 	$(LD) $(LDFLAGS) -N -e main -Ttext 0 -o _forktest forktest.o ulib.o usys.o
 	$(OBJDUMP) -S _forktest > forktest.asm
 
-mkfs: mkfs.c fs.h
+mkfs: mkfs.c include/fs.h
 	gcc -Werror -Wall -o mkfs mkfs.c
 
 # Prevent deletion of intermediate files, e.g. cat.o, after first build, so
@@ -182,16 +182,6 @@ clean:
 	initcode initcode.out kernel xv6.img fs.img kernelmemfs mkfs \
 	.gdbinit \
 	$(UPROGS)
-
-# make a printout
-FILES = $(shell grep -v '^\#' runoff.list)
-PRINT = runoff.list runoff.spec README toc.hdr toc.ftr $(FILES)
-
-xv6.pdf: $(PRINT)
-	./runoff
-	ls -l xv6.pdf
-
-print: xv6.pdf
 
 # run in emulators
 
