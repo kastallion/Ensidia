@@ -8,13 +8,13 @@ OBJS = \
 	xng/ioapic.o\
 	xng/kalloc.o\
 	xng/kbd.o\
-	lapic.o\
-	log.o\
+	xng/lapic.o\
+	xng/log.o\
 	xng/main.o\
 	xng/mp.o\
 	xng/picirq.o\
-	pipe.o\
-	proc.o\
+	xng/pipe.o\
+	xng/proc.o\
 	xng/spinlock.o\
 	string.o\
 	swtch.o\
@@ -182,7 +182,7 @@ clean:
 	initcode initcode.out kernel xv6.img fs.img kernelmemfs mkfs \
 	.gdbinit \
 	$(UPROGS)
-	rm xng/*.o
+	rm xng/*.o xng/*.d
 
 # run in emulators
 
