@@ -24,7 +24,7 @@ OBJS = \
 	xng/timer.o\
 	xng/trapasm.o\
 	xng/trap.o\
-	uart.o\
+	xng/uart.o\
 	xng/vectors.o\
 	xng/vm.o\
 
