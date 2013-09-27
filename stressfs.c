@@ -8,7 +8,7 @@
 //      asm volatile("");
 
 #include "types.h"
-#include "stat.h"
+#include "include/stat.h"
 #include "user.h"
 #include "include/fs.h"
 #include "fcntl.h"

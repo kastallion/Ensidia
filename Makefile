@@ -10,7 +10,7 @@ OBJS = \
 	xng/kbd.o\
 	lapic.o\
 	log.o\
-	main.o\
+	xng/main.o\
 	xng/mp.o\
 	xng/picirq.o\
 	pipe.o\

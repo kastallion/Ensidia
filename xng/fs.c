@@ -12,7 +12,7 @@
 #include "../types.h"
 #include "../defs.h"
 #include "../param.h"
-#include "../stat.h"
+#include "../include/stat.h"
 #include "../mmu.h"
 #include "../proc.h"
 #include "../include/spinlock.h"
