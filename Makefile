@@ -12,7 +12,7 @@ OBJS = \
 	log.o\
 	main.o\
 	xng/mp.o\
-	picirq.o\
+	xng/picirq.o\
 	pipe.o\
 	proc.o\
 	xng/spinlock.o\
