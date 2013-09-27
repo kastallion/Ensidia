@@ -8,7 +8,7 @@
 #include "traps.h"
 #include "spinlock.h"
 #include "include/fs.h"
-#include "file.h"
+#include "include/file.h"
 #include "memlayout.h"
 #include "mmu.h"
 #include "proc.h"

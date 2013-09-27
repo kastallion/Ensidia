@@ -6,7 +6,7 @@
 #include "traps.h"
 #include "spinlock.h"
 #include "include/fs.h"
-#include "file.h"
+#include "include/file.h"
 #include "mmu.h"
 #include "proc.h"
 #include "x86.h"

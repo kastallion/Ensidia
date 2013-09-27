@@ -18,7 +18,7 @@
 #include "../spinlock.h"
 #include "../buf.h"
 #include "../include/fs.h"
-#include "../file.h"
+#include "../include/file.h"
 
 #define min(a, b) ((a) < (b) ? (a) : (b))
 static void itrunc(struct inode*);

@@ -2,7 +2,7 @@ OBJS = \
 	bio.o\
 	console.o\
 	exec.o\
-	file.o\
+	xng/file.o\
 	xng/fs.o\
 	ide.o\
 	ioapic.o\
