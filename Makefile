@@ -1,7 +1,7 @@
 OBJS = \
-	bio.o\
-	console.o\
-	exec.o\
+	xng/bio.o\
+	xng/console.o\
+	xng/exec.o\
 	xng/file.o\
 	xng/fs.o\
 	ide.o\
