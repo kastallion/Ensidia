@@ -16,8 +16,8 @@ OBJS = \
 	xng/pipe.o\
 	xng/proc.o\
 	xng/spinlock.o\
-	string.o\
-	swtch.o\
+	xng/string.o\
+	xng/swtch.o\
 	syscall.o\
 	sysfile.o\
 	sysproc.o\
@@ -25,7 +25,7 @@ OBJS = \
 	trapasm.o\
 	trap.o\
 	uart.o\
-	vectors.o\
+	xng/vectors.o\
 	xng/vm.o\
 
 # Cross-compiling (e.g., on Mac OS X)
@@ -129,8 +129,8 @@ kernelmemfs: $(MEMFSOBJS) entry.o entryother initcode fs.img
 tags: $(OBJS) entryother.S _init
 	etags *.S *.c
 
-vectors.S: vectors.pl
-	perl vectors.pl > vectors.S
+xng/vectors.S: vectors.pl
+	perl vectors.pl > xng/vectors.S
 
 ULIB = ulib.o usys.o printf.o umalloc.o
 
@@ -178,11 +178,11 @@ fs.img: mkfs README $(UPROGS)
 
 clean: 
 	rm -f *.tex *.dvi *.idx *.aux *.log *.ind *.ilg \
-	*.o *.d *.asm *.sym vectors.S bootblock entryother \
+	*.o *.d *.asm *.sym bootblock entryother \
 	initcode initcode.out kernel xv6.img fs.img kernelmemfs mkfs \
 	.gdbinit \
 	$(UPROGS)
-	rm xng/*.o xng/*.d
+	rm xng/*.o xng/*.d vectors.S
 
 # run in emulators
 
