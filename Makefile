@@ -129,8 +129,8 @@ kernelmemfs: $(MEMFSOBJS) entry.o entryother initcode fs.img
 tags: $(OBJS) entryother.S _init
 	etags *.S *.c
 
-xng/vectors.S: vectors.pl
-	perl vectors.pl > xng/vectors.S
+xng/vectors.S: vectors.py
+	python vectors.py > xng/vectors.S
 
 ULIB = ulib.o usys.o printf.o umalloc.o
 
