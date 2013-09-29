@@ -97,8 +97,8 @@ bootblock: bootasm.S xng/bootmain.c
 	$(OBJCOPY) -S -O binary -j .text bootblock.o bootblock
 	./sign.pl bootblock
 
-entryother: entryother.S
-	$(CC) $(CFLAGS) -fno-pic -nostdinc -I. -c entryother.S
+entryother: xng/entryother.S
+	$(CC) $(CFLAGS) -fno-pic -nostdinc -I. -c xng/entryother.S
 	$(LD) $(LDFLAGS) -N -e start -Ttext 0x7000 -o bootblockother.o entryother.o
 	$(OBJCOPY) -S -O binary -j .text bootblockother.o entryother
 	$(OBJDUMP) -S bootblockother.o > entryother.asm
@@ -126,7 +126,7 @@ kernelmemfs: $(MEMFSOBJS) xng/entry.o entryother initcode fs.img
 	$(OBJDUMP) -S kernelmemfs > kernelmemfs.asm
 	$(OBJDUMP) -t kernelmemfs | sed '1,/SYMBOL TABLE/d; s/ .* / /; /^$$/d' > kernelmemfs.sym
 
-tags: $(OBJS) entryother.S _init
+tags: $(OBJS) xng/entryother.S _init
 	etags *.S *.c
 
 xng/vectors.S: vectors.py
