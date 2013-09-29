@@ -2,7 +2,7 @@
 #include "../defs.h"
 #include "../param.h"
 #include "../memlayout.h"
-#include "../mmu.h"
+#include "../include/mmu.h"
 #include "../proc.h"
 #include "../include/x86.h"
 
@@ -110,7 +110,4 @@ pde_t entrypgdir[NPDENTRIES] = {
   // Map VA's [KERNBASE, KERNBASE+4MB) to PA's [0, 4MB)
   [KERNBASE>>PDXSHIFT] = (0) | PTE_P | PTE_W | PTE_PS,
 };
-
-//PAGEBREAK!
-// Blank page.
 

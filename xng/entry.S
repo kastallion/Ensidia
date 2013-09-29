@@ -16,7 +16,7 @@
 
 #include "../asm.h"
 #include "../memlayout.h"
-#include "../mmu.h"
+#include "../include/mmu.h"
 #include "../param.h"
 
 # Multiboot header.  Data to direct multiboot loader.

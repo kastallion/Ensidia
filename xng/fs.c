@@ -13,7 +13,7 @@
 #include "../defs.h"
 #include "../param.h"
 #include "../include/stat.h"
-#include "../mmu.h"
+#include "../include/mmu.h"
 #include "../proc.h"
 #include "../include/spinlock.h"
 #include "../buf.h"

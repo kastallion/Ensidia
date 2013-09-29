@@ -7,7 +7,7 @@
 #include "../include/spinlock.h"
 #include "../include/fs.h"
 #include "../include/file.h"
-#include "../mmu.h"
+#include "../include/mmu.h"
 #include "../proc.h"
 #include "../include/x86.h"
 
