@@ -182,7 +182,7 @@ clean:
 	initcode initcode.out kernel xv6.img fs.img kernelmemfs mkfs \
 	.gdbinit \
 	$(UPROGS)
-	rm xng/*.o xng/*.d vectors.S
+	rm xng/*.o xng/*.d xng/vectors.S
 
 # run in emulators
 
