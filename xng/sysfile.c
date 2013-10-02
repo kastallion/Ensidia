@@ -8,7 +8,7 @@
 #include "../defs.h"
 #include "../param.h"
 #include "../include/stat.h"
-#include "../mmu.h"
+#include "../include/mmu.h"
 #include "../proc.h"
 #include "../include/fs.h"
 #include "../include/file.h"

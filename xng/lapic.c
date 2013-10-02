@@ -5,7 +5,7 @@
 #include "../defs.h"
 #include "../memlayout.h"
 #include "../traps.h"
-#include "../mmu.h"
+#include "../include/mmu.h"
 #include "../include/x86.h"
 
 // Local APIC registers, divided by 4 for use as uint[] indices.

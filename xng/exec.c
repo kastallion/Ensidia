@@ -1,7 +1,7 @@
 #include "../types.h"
 #include "../param.h"
 #include "../memlayout.h"
-#include "../mmu.h"
+#include "../include/mmu.h"
 #include "../proc.h"
 #include "../defs.h"
 #include "../include/x86.h"

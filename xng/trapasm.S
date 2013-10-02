@@ -1,4 +1,4 @@
-#include "../mmu.h"
+#include "../include/mmu.h"
 
   # vectors.S sends all traps here.
 .globl alltraps

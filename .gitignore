@@ -17,3 +17,6 @@ mkfs
 
 # ignore pdfs in the folder
 *.pdf
+
+# also ignore cscope output
+cscope.out
