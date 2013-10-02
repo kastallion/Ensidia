@@ -3,7 +3,7 @@
 #include "../param.h"
 #include "../include/spinlock.h"
 #include "../include/fs.h"
-#include "../buf.h"
+#include "../include/buf.h"
 
 // Simple logging. Each system call that might write the file system
 // should be surrounded with begin_trans() and commit_trans() calls.

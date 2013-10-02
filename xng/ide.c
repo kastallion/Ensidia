@@ -9,7 +9,7 @@
 #include "../include/x86.h"
 #include "../traps.h"
 #include "../include/spinlock.h"
-#include "../buf.h"
+#include "../include/buf.h"
 
 #define IDE_BSY       0x80
 #define IDE_DRDY      0x40

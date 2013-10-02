@@ -16,7 +16,7 @@
 #include "../include/mmu.h"
 #include "../proc.h"
 #include "../include/spinlock.h"
-#include "../buf.h"
+#include "../include/buf.h"
 #include "../include/fs.h"
 #include "../include/file.h"
 

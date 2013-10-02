@@ -24,7 +24,7 @@
 #include "../defs.h"
 #include "../param.h"
 #include "../include/spinlock.h"
-#include "../buf.h"
+#include "../include/buf.h"
 
 struct {
   struct spinlock lock;
