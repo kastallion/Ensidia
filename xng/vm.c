@@ -5,7 +5,7 @@
 #include "../memlayout.h"
 #include "../include/mmu.h"
 #include "../proc.h"
-#include "../elf.h"
+#include "../include/elf.h"
 
 extern char data[];  // defined by kernel.ld
 pde_t *kpgdir;  // for use in scheduler()
